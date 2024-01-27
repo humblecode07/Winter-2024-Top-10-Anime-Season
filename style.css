@@ -1,28 +1,37 @@
 body {
-    background: gray;
-    overflow: hidden;
+    margin: 0;
+    overflow: hidden;  
 }
 
 .bento-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100dvw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-evenly;
-    height: 100dvh;
-    width: 100dvw;
 }
 
 .box {
     height: 23dvh;
-    width: 21dvw;
-    background-color: burlywood;
+    width: 22dvw;
+    background-color: rgb(83, 83, 83);
     border-radius: 20px;
 }
 
 .box.six {
+    background-color: transparent;
+    display: grid;
+    place-items: center;
     height: 45dvh;
-    width: 46dvw;
+    width: 47dvw;
+    color: white;
+   
+    overflow: hidden;
 }
 
 .box.five {
@@ -31,4 +40,34 @@ body {
 
 .box.seven {
     height: 45dvh;
+}
+
+/* TEXT & VIDEO*/
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 100px;
+    color: #ffffff;
+    height: 100dvh;
+    width: 100dvw;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: multiply;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+video {
+    height: 100%;
+    width: 100%;
 }
