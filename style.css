@@ -21,17 +21,16 @@ body {
     width: 22dvw;
     background-color: rgb(83, 83, 83);
     border-radius: 20px;
+    cursor: pointer;
+    transition: transform .2s;
 }
 
 .box.six {
     background-color: transparent;
-    display: grid;
-    place-items: center;
     height: 45dvh;
     width: 47dvw;
-    color: white;
-   
     overflow: hidden;
+    cursor: default;
 }
 
 .box.five {
@@ -49,7 +48,7 @@ body {
     top: 0;
     left: 0;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 100px;
+    font-size: 7rem;
     color: #ffffff;
     height: 100dvh;
     width: 100dvw;
@@ -71,3 +70,23 @@ video {
     height: 100%;
     width: 100%;
 }
+
+ /* Animation */
+
+ span {
+    animation: fadeIn 5s;
+ }
+
+ @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
+
+ .box:hover {
+    transform: scale(1.05);
+ }
+
